@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+
+/* Roots */
+:root {
+  --clr-ios: hsl(171, 66%, 44%);
+  --clr-ios-hover: hsl(171, 61%, 51%);
+  --clr-ios-dark: hsl(171, 47%, 41%);
+  --clr-mac: hsl(233, 100%, 69%);
+  --clr-mac-hover: hsl(233, 100%, 78%);
+  --clr-mac-dark: hsl(233, 45%, 51%);
+  --clr-h1-font: hsl(210, 10%, 33%);
+  --clr-p-font: hsl(201, 11%, 66%);
+  --clr-footer: hsl(0, 0%, 94%);
+  --clr-button-font: #fff;
+  --fs-p: 1.125rem;
+  --fw-400: 400;
+  --fw-600: 600;
+  --ff: 'Bai Jamjuree', sans-serif;
+}
+
+
+
+/* Main */
+body {
+  box-sizing: border-box;
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: var(--ff);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  color: var(--clr-h1-font);
+  font-size: 2rem;
+  font-weight: var(--fw-600);
+}
+
+p {
+  color: var(--clr-p-font);
+}
+
+p, button {
+  font-size: var(--fs-p);
+  font-weight: var(--fw-400);
+}
+
+.display-grid {
+  display: grid;
+  gap: 2.2rem;
+}
+
+.first-block, .seventh-block, .eighth-block, .ninth-block, .tenth-block {
+  place-items: center;
+}
+
+.mobile-width, .image-computer, .image-mobile-computer {
+  width: max(345px, 50vw);
+}
+
+.download-first-block, .download-ninth-block {
+  width: max(340px, 35vw);
+}
+
+button {
+  border-radius: 50px;
+  border-style: none;
+  color: var(--clr-button-font);
+  padding: 1rem;
+  width: 100%;
+}
+
+.ios {
+  background-color: var(--clr-ios);
+  box-shadow: 0 20px 40px -20px var(--clr-ios);
+  border-bottom: solid 5px var(--clr-ios-dark);
+  grid-area: A;
+}
+
+.mac {
+  background-color: var(--clr-mac);
+  box-shadow: 0 20px 40px -20px var(--clr-mac);
+  border-bottom: solid 5px var(--clr-mac-dark);
+  grid-area: B;
+}
+
+.second-block, .fourth-block, .sixth-block {
+  margin: 20vh auto 10vh auto;
+}
+
+.third-block, .seventh-block, .eighth-block {
+  margin: 0 auto 20vh auto;
+}
+
+
+
+/* First Block */
+.first-block {
+  margin: 10vh auto;
+}
+
+.main-logo {
+  max-width: 7rem;
+}
+
+
+
+/* Third Block */
+.third-block {
+  grid-template-areas:
+    'C'
+    'D';
+}
+
+.image-third-block {
+  grid-area: C;
+}
+
+.text-third-block {
+  grid-area: D;
+}
+
+
+
+/* Seventh Block */
+.seventh-block {
+  grid-template-areas:
+    'E'
+    'F'
+    'G';
+}
+
+.part-1-seventh-block {
+  grid-area: E;
+}
+
+.part-2-seventh-block {
+  grid-area: F;
+}
+
+.part-3-seventh-block {
+  grid-area: G;
+}
+
+
+
+/* Eighth Block */
+.eighth-block {
+  gap: 4rem;
+  grid-template-areas:
+    'H'
+    'I'
+    'J'
+    'K'
+    'L';
+}
+
+.part-1-eighth-block {
+  grid-area: H;
+}
+
+.part-2-eighth-block {
+  grid-area: I;
+}
+
+.part-3-eighth-block {
+  grid-area: J;
+}
+
+.part-4-eighth-block {
+  grid-area: K;
+}
+
+.part-5-eighth-block {
+  grid-area: L;
+}
+
+
+
+/* Ninth Block */
+.ninth-block {
+  margin: 10vh auto 30vh auto;
+}
+
+
+
+/* Tenth Block */
+.position-relative {
+  position: relative;
+}
+
+footer {
+  background-color: var(--clr-footer);
+}
+
+.tenth-block {
+  padding: 10vh 0;
+  gap: 0;
+  grid-template-areas:
+    'M'
+    'N'
+    'O'
+    'P'
+    'Q';
+}
+
+.logo-tenth-block {
+  grid-area: M;
+}
+
+.main-logo-2 {
+  max-width: 5rem;
+}
+
+.part-1-tenth-block, .part-2-tenth-block {
+  line-height: 2;
+}
+
+.part-1-tenth-block {
+  margin-top: 2rem;
+  grid-area: N;
+}
+
+.part-2-tenth-block {
+  bottom: 1rem;
+  grid-area: O;
+}
+
+.part-3-tenth-block {
+  bottom: 1.8rem;
+  margin-bottom: 2rem;
+  grid-area: P;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+.icon, h3 {
+  color: var(--clr-h1-font);
+}
+
+.icon-tenth-block {
+  right: 1rem;
+  grid-area: Q;
+}
+
+.icon {
+  padding-left: 2rem;
+}
+
+
+
+/* Hover Section */
+.ios:hover {
+  background-color: var(--clr-ios-hover);
+  box-shadow: 0 20px 40px -20px var(--clr-ios-hover);
+}
+
+.mac:hover {
+  background-color: var(--clr-mac-hover);
+  box-shadow: 0 20px 40px -20px var(--clr-mac-hover);
+}
+
+.icon:hover, h3:hover {
+  color: var(--clr-ios);
+}
+
+
+
+/* Responsiveness Section */
+@media (min-width: 888px) {
+  body {
+    background-image: url(images/bg-header-desktop.png);
+  }
+
+  .image-mobile-computer {
+    width: max(345px, 65vw);
+  }
+
+  .tenth-block {
+    width: max(345px, 82vw);
+    margin: 0 auto;
+    padding: 5vh 0;
+    text-align: left;
+    grid-template-areas: 'M N O P Q';
+  }
+
+  .part-1-tenth-block {
+    margin-top: 0;
+  }
+
+  .part-3-tenth-block {
+    margin-bottom: 0;
+  }
+
+  .part-2-tenth-block {
+    bottom: 0;
+  }
+}
+
+
+@media (min-width:1300px) {
+  .download-first-block, .download-ninth-block {
+    grid-template-areas: 'A B';
+  }
+
+  .third-block, .text-2-third-block, .text-3-third-block {
+    position: relative;
+  }
+
+  .third-block {
+    margin: 0 auto 20vh 0;
+    width: max(345px, 82vw);
+    right: 3rem;
+    gap: 5rem;
+    grid-template-areas: 'C C D';
+  }
+
+  .text-third-block {
+    gap: 0;
+    text-align: left;
+  }
+
+  .text-2-third-block {
+    bottom: 3rem;
+  }
+
+  .text-3-third-block {
+    bottom: 6rem;
+  }
+
+  .seventh-block {
+    width: max(345px, 80vw);
+    grid-template-areas: 'E F G';
+  }
+
+  .eighth-block {
+    grid-template-areas: 'H I J K L';
+    width: max(345px, 82vw);
+  }
+
+  .icon-tenth-block {
+    place-self: left;
+  }
+}
+
+
+@media (min-width:2000px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p, button {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .main-logo {
+    max-width: 15rem;
+  }
+
+  .main-logo-2 {
+    max-width: 10rem;
+  }
+
+  .logo {
+    min-width: 15rem;
+  }
+
+  .icon {
+    padding-left: 5rem;
+  }
+}
